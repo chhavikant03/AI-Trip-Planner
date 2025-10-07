@@ -1,0 +1,188 @@
+:root {
+  --background-color: #fcf5f5;
+  --text-color: #dd4e4e;
+  --primary-color: #6c5ce7;
+  --secondary-text: #a0a0a0;
+  --border-color: #d1d5db;
+  --border-radius: 8px;
+  --font-family: 'Segoe UI', sans-serif;
+}
+*{
+    padding: 0;margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    background-color: #F8F4F6;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    /* glossy navbar */
+    /* background: linear-gradient(135deg, var(--navbar-bg-start), var(--navbar-bg-end));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+/* landing page styling */
+.hero{
+    margin-top: 180px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+}
+#text{
+    color: var(--text-color);
+    font-size: 2em;
+    font-weight: 900;
+}
+h1 p{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+#sub{
+    color: var(--secondary-text);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.button{
+    padding: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-weight:600;
+    color: #fff;
+    background-color: #333;
+    padding: 15px 24px;
+    border-radius: 8px;
+}
+a:hover{
+    /* color: var(--text-color); */
+    box-shadow: 0 6px 20px rgba(203, 71, 14, 0.663);
+    transform: translateY(-2px);
+    cursor: pointer;
+    background-color: var(--text-color);
+}
+
+/* create-trip styling */
+.form-container{
+    align-content: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.form-container h2{
+    text-align: center;
+    font-size: 2.25em;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.form-container p{
+    text-align: center;
+    color:var(--secondary-text);
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 1.65em;
+}
+input, select{
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+h3{
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 1.65em;
+}
+.card-group{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    /* transition: all 0.3s ease-in-out; */
+}
+.card-group .card{
+    flex: 1;
+    min-width: 150px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+.card.selected {
+    border: 2px solid #aeb3ba;
+    /* background-color: #e9f1ff; */
+    box-shadow: 0px 4px 10px rgba(35, 35, 35, 0.2);
+    transform: translateY(-3px);
+}
+.card-group .card:hover{
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.663);
+    transform: translateY(-2px);
+}
+.submit-btn{
+    border: none;
+    text-decoration: none;
+    font-weight:600;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    padding: 15px 24px;
+    border-radius: 8px;
+}
+.submit-btn:hover{
+    box-shadow: 0 6px 20px rgba(203, 71, 14, 0.663);
+    transform: translateY(-2px);
+    cursor: pointer;
+    background-color: var(--text-color);
+}
+
+/* view trip styling */
+.itinerary, .hotels {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+.itinerary h2, .hotels h2 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.itinerary p, .hotels p, .itinerary li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.hotels ul, .itinerary ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.hotels li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+}

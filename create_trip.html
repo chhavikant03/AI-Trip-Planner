@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="create-trip-page-body">
+<!-- navbar -->
+    <header class="navbar">
+        <h1>✨AI Trip Planner</h1>
+        <a href="index.html" class="btn">Home</a>
+    </header>
+<!-- navbar ends -->
+
+<!-- main section starts -->
+<!-- form container -->
+ <form id="tripForm">
+  <main class="form-container">
+    <h2>Tell us your travel preferences🏕️🌴</h2>
+    <p>Just provide some basic information, and our trip planner will generate a customized itinerary based on your preferences.</p>
+
+    <!-- destination -->
+     <label for="destination">What is destination of choice?</label>
+     <input type="text" id="destination" placeholder="Ex. Tokyo, Japan" required>
+
+     <!-- days -->
+      <label for="days">How many days are you planning your trip?</label>
+    <input type="number" id="days" placeholder="Ex. 4" min="1" max="5" required>
+
+    <!-- budget -->
+     <h3>What is Your Budget?</h3>
+    <div class="card-group">
+  <div class="card" data-type="budget" data-value="Cheap">💵 Cheap <p>Stay conscious of costs</p></div>
+  <div class="card" data-type="budget" data-value="Moderate">💰 Moderate <p>Keep costs average</p></div>
+  <div class="card" data-type="budget" data-value="Luxury">💎 Luxury <p>Don’t worry about cost</p></div>
+</div>
+
+    <!-- companion -->
+     <h3>Who do you plan on traveling with?</h3>
+<div class="card-group">
+  <div class="card" data-type="companion" data-value="Just Me">🛫 Just Me <p>A solo traveler</p></div>
+  <div class="card" data-type="companion" data-value="A Couple">🥂 A Couple <p>Two travelers in tandem</p></div>
+  <div class="card" data-type="companion" data-value="Family">🏠 Family <p>A group of fun-loving adventurers</p></div>
+  <div class="card" data-type="companion" data-value="Friends">⛵ Friends <p>A bunch of thrill-seekers</p></div>
+</div>
+
+    <!-- Submit -->
+    <!-- <a href="view_trip.html">Generate Trip</a> -->
+    <button class="submit-btn" type="submit" >Generate Trip</button>
+  </main>
+  </form>
+ <!-- main section ends -->
+ <!-- script -->
+<script type="module" src="script.js"></script>
+</body>
+</html>
