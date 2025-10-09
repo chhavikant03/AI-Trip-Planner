@@ -1,4 +1,4 @@
-const geminiApiKey = "AIzaSyD1JYx3albv-PlZ8IT0ct_i51-l6Oc4E7o";
+const geminiApiKey = //insert api key;
 
 // ================== CREATE TRIP PAGE ==================
 document.addEventListener("DOMContentLoaded", () => {
@@ -49,7 +49,7 @@ if (document.body.classList.contains("itinerary-page-body")) {
     itineraryContainer.innerHTML = `<p>Creating itinerary for <b>${tripData.destination}</b>...</p>`;
 
     try {
-      // Build prompt
+      //prompt
       const prompt = `
       You are an expert AI Trip Planner.  
       Plan a ${tripData.days}-day trip to ${tripData.destination} for ${tripData.companion} with a ${tripData.budget} budget.  
@@ -60,7 +60,7 @@ if (document.body.classList.contains("itinerary-page-body")) {
 
       ## Suggested Itinerary
       (Day-by-day plan with bullet points and timings)
-      (Also thing to do with the companion you are traveling with)
+      (Also things to do with the companion you are traveling with)
 
       ## Recommended Hotels & Places
       - List at least 3 hotels (name + why it fits the budget)  
