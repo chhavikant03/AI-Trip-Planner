@@ -1,6 +1,6 @@
-const geminiApiKey = //insert api key;
+const geminiApiKey = "Your API key must be here";
 
-// ================== CREATE TRIP PAGE ==================
+//create trip page
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("tripForm");
   if (form) {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ================== VIEW TRIP PAGE ==================
+// view trip page
 if (document.body.classList.contains("itinerary-page-body")) {
   document.addEventListener("DOMContentLoaded", async () => {
     const tripData = JSON.parse(localStorage.getItem("tripData"));
